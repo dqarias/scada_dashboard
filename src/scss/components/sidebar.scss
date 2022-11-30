@@ -1,0 +1,29 @@
+.sidebar{
+    min-width: 100%;
+    background-color: $primary-color-dark;
+    &__image{
+        @include flexbox(row, center, center);
+        padding-top: 3.2rem;
+    }
+    &__menu{
+        @include flexbox(column, none, flex-start);
+        gap: 3.6rem;
+        font-family: $font-titles;
+        font-size: 1.6rem;
+        font-weight: 700;
+        line-height: 2.2rem;
+        padding-top: 4.6rem;
+        padding-left: 2.4rem;
+
+        &-link{
+            @include flexbox(row, center, center);
+            text-decoration: none;
+            color: $white-color-dark;
+            gap: 1.4rem;
+
+            &-icons{
+                font-size: 2.6rem;
+            }
+        }
+    }
+}
