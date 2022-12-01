@@ -1,7 +1,8 @@
 @import "./base/reset";
 @import "./abstracts/variables";
 @import "./abstracts/mixins";
+@import "./components/header.scss";
 @import "./components/sidebar.scss";
 @import "./pages/dashboard";
 @import "./pages/main";
-@import "./pages/low-voltage-panel";
+@import "./pages/low-voltage-panel"

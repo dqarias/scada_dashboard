@@ -1,0 +1,58 @@
+.lowpanel{
+    height: calc(100vh - 9.6rem);
+    display: grid;
+    padding-left: 1.2rem;
+    grid-template-columns: 35% 65%;
+
+    &__left{
+        display: grid;
+        grid-template-rows: 60% 40%;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        &-top{
+        max-height: 100%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 1rem;
+        
+        &-row{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1rem;
+        }
+        &-column{
+            background-color: $primary-color-dark;
+            border-radius: 0.5rem;
+        }
+        }
+        &-bottom{
+            margin-top: 1rem;
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            grid-gap: 1rem;
+        &-row{
+            background-color: $primary-color-dark;
+            border-radius: 0.5rem;
+        }
+        }
+    }
+
+    &__right{
+            overflow: hidden;
+            margin: 1rem;
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            grid-gap: 1rem;
+
+        &-row{
+            display: grid;
+            grid-template-columns: 25% 40% 35%;
+            grid-gap: 1rem;
+        }
+
+        &-column{
+            background-color: $primary-color-dark;
+            border-radius: 0.5rem;
+        }
+    }
+}
