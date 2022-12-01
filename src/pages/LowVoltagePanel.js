@@ -1,4 +1,5 @@
 import React from 'react';
+import Gauger from '../components/Gauger';
 
 const LowVoltagePanel = () => (
   <div className="lowpanel">
@@ -41,7 +42,7 @@ const LowVoltagePanel = () => (
     <div className="lowpanel__right">
       <div className="lowpanel__right-row">
         <div className="lowpanel__right-column">
-          1
+          <Gauger />
         </div>
         <div className="lowpanel__right-column">
           2
