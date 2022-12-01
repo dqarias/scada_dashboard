@@ -1,0 +1,14 @@
+.header {
+  background-color: $primary-color-dark;
+  height: 9.6rem;
+  margin-left: 1.2rem;
+  border-radius: 0 0 0 0.4rem;
+
+  @include flexbox(row, center, center);
+
+  &__title {
+    font-family: $font-titles;
+    font-size: 4rem;
+    font-weight: 700;
+  }
+}
